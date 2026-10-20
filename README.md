@@ -10,7 +10,7 @@
 ## 快速开始
 
 ```sh
-python3 -m portal --port 3000 --port 7681
+~/portal/start.sh --port 3000 --port 7681
 ```
 
 启动后会打印每个端口的域名、索引链接和一个二维码：
@@ -40,9 +40,9 @@ name = "dev server"
 ```
 
 ```sh
-python3 -m portal                      # 自动读当前目录的 config.toml
-python3 -m portal --config other.toml  # 指定文件
-python3 -m portal --port 8080          # 和配置文件合并，按端口去重
+~/portal/start.sh                      # 自动读当前目录的 config.toml
+~/portal/start.sh --config other.toml  # 指定文件
+~/portal/start.sh --port 8080          # 和配置文件合并，按端口去重
 ```
 
 ## 访问是怎么走的
