@@ -235,7 +235,8 @@ class PortProxy:
                             f'<span class="name">{name}</span><span class="go">隧道未建立</span></span></li>')
                 continue
             link = escape(f"{url}/?token={quote(self.portal.auth.token, safe='')}")
-            rows.append(f'<li><a href="{link}"><span class="port">{target.port}</span>'
+            rows.append(f'<li><a href="{link}" target="_blank" rel="noopener">'
+                        f'<span class="port">{target.port}</span>'
                         f'<span class="name">{name}</span><span class="go">打开</span></a></li>')
         page = INDEX_PAGE.replace("<!--rows-->", "\n".join(rows))
         await respond(writer, 200, page, "text/html; charset=utf-8",
