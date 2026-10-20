@@ -1,0 +1,9 @@
+# 每个 [[target]] 发布一个本地端口；未指定 name 时索引页显示"未命名"。
+
+[[target]]
+port = 7681
+name = "webterm"
+
+[[target]]
+port = 3000
+name = "dev server"
